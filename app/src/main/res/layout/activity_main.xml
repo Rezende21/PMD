@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/gradient"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txt_resul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="60sp"
+        android:textAlignment="textEnd"
+        android:layout_marginTop="70dp"
+        android:background="@color/white"
+        android:layout_marginStart="22sp"
+        android:elevation="8dp"
+        android:layout_marginEnd="22sp" />
+
+    <LinearLayout
+        android:id="@+id/layout_bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:paddingTop="50dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/txt_resul">
+
+        <EditText
+            android:id="@+id/edit_meta"
+            android:layout_width="match_parent"
+            android:hint="@string/meta"
+            android:background="@color/white"
+            android:layout_marginEnd="8sp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:layout_weight="1"/>
+
+        <EditText
+            android:id="@+id/edit_venda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/venda"
+            android:layout_marginStart="8sp"
+            android:background="@color/white"
+            android:inputType="numberDecimal"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/bt_calcular"
+        android:layout_marginTop="8sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/bt_calcular"
+        android:backgroundTint="@color/strong_blue"
+        android:elevation="8dp"
+        android:layout_below="@id/layout_bt"/>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/google_ads"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-6387737886095010/9701211803"/>
+</RelativeLayout>

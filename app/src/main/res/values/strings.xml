@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PMD</string>
+    <string name="informe_a_meta">Informe a meta</string>
+    <string name="informe_a_venda">Informe a venda</string>
+    <string name="bt_calcular">Calcular</string>
+    <string name="venda">Venda</string>
+    <string name="meta">Meta</string>
+</resources>
